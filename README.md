@@ -25,7 +25,7 @@ Bot commands:
 ## Device monitor
 ---Explain the monitoring skill point---
 One of the things that this bot allows you to do is monitor when a device changes IP addresses. This feature is used to monitor when a router changes its IP address so that a VPN connection with a second router isn't dropped. When the first router changes its IP address the monitor takes note of that and sends a new configuration to the second router to maintain the VPN connection between the two.
-![Device Monitor Diagram](/Images/VPNdiagram.vsdk)
+![Device Monitor Diagram](/Images/vpndiag.png)
 
 Footer
 © 2022 GitHub, Inc.
