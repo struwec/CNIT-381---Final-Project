@@ -1,0 +1,20 @@
+---
+- name: Configure OSPF on cisco ios
+  hosts: routers
+  gather_facts: false
+  connection: network_cli
+  become: true
+  become_method: enable
+  vars:
+    ansible_become_password: cisco123!
+
+  tasks:
+    - name: Configure EIGRP
+      ios_config:
+        lines:
+          - network 0.0.0.0 0.0.0.0
+        parents: router eigrp 60
+      register: output
+    
+    - name: Print to console
+      debug: var=output

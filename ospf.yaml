@@ -1,0 +1,22 @@
+---
+- name: Configure OSPF on cisco ios
+  hosts: routers
+  gather_facts: false
+  connection: network_cli
+  become: true
+  become_method: enable
+  vars:
+    ansible_become_password: cisco123!
+
+  tasks:
+    - name: Configure OSPF
+      ios_config:
+        lines:
+          - network 0.0.0.0 0.0.0.0 area 0
+          - distance 120
+          - default-information originate
+        parents: router ospf 1
+      register: output
+    
+    - name: Print to console
+      debug: var=output

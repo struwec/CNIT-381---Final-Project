@@ -1,0 +1,3 @@
+[routers]
+CSR1kv ansible_user=cisco ansible_password=cisco123! ansible_host=192.168.149.146 ansible_network_os=ios
+CSR2kv ansible_user=cisco ansible_password=cisco123! ansible_host=192.168.149.147 ansible_network_os=ios
