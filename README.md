@@ -10,7 +10,11 @@ The chatbot used for this project is a Cisco WebEx bot. To use a WebEx bot to mo
 ---Fill in resources/libraries needed to make this run---
 
 ## Python scripts
-We started putting this bot together by using the 381bot.py file found on the Canvas page for this course. With that file we replaced the connecting information with that of our own bot. For this bot to work though, you will need to create a webhook for it. To do this enter the command ```ngrok http 5000```. After that copy the forwarding address that starts with https, this url will be used for the bot_url in the 381bot.py file.
+We started putting this bot together by using the 381bot.py file found on the Canvas page for this course. With that file we replaced the connecting information with that of our own bot. For this bot to work though, you will need to create a webhook for it. To do this enter the command ```ngrok http 5000```. After that copy the forwarding address that starts with https, this url will be used for the bot_url in the 381bot python file.
+![Bot URL creation](/Images/ngrokHTTP.PNG)
+
+In the 381bot.py file you will want to look for the bot details section of the code. In that section you will see one line start with bot_url. In the single quotation marks enter your the url for the webhook.
+![Webhook URL entry](/Images/botURL.PNG)
 
 ## Bot commands
 This bot allows you to run multiple commands. The commands that this bot allows you to run let you view the configuration of a device and configure a device. 
