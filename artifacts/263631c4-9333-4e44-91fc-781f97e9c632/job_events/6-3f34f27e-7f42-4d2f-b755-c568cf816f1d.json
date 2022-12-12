@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "3f34f27e-7f42-4d2f-b755-c568cf816f1d", "counter": 6, "stdout": "\u001b[0;35m[DEPRECATION WARNING]: Distribution ubuntu 20.04 on host CSR1kv should use \u001b[0m", "start_line": 4, "end_line": 5, "runner_ident": "263631c4-9333-4e44-91fc-781f97e9c632", "created": "2022-12-12T11:27:04.289991"}
