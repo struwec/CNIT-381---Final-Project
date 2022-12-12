@@ -1,0 +1,62 @@
+
+PLAY [Configure OSPF on cisco ios] *********************************************
+
+TASK [Configure EIGRP] *********************************************************
+[0;35mby setting deprecation_warnings=False in ansible.cfg.[0m
+[0;33mchanged: [CSR1kv][0m
+[0;35mby setting deprecation_warnings=False in ansible.cfg.[0m
+[0;33mchanged: [CSR2kv][0m
+
+TASK [Print to console] ********************************************************
+[0;32mok: [CSR2kv] => {[0m
+[0;32m    "output": {[0m
+[0;32m        "ansible_facts": {[0m
+[0;32m            "discovered_interpreter_python": "/usr/bin/python"[0m
+[0;32m        },[0m
+[0;32m        "banners": {},[0m
+[0;32m        "changed": true,[0m
+[0;32m        "commands": [[0m
+[0;32m            "router eigrp 60",[0m
+[0;32m            "network 0.0.0.0 0.0.0.0"[0m
+[0;32m        ],[0m
+[0;32m        "deprecations": [[0m
+[0;32m            {[0m
+[0;32m                "msg": "Distribution ubuntu 20.04 on host CSR2kv should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information",[0m
+[0;32m                "version": "2.12"[0m
+[0;32m            }[0m
+[0;32m        ],[0m
+[0;32m        "failed": false,[0m
+[0;32m        "updates": [[0m
+[0;32m            "router eigrp 60",[0m
+[0;32m            "network 0.0.0.0 0.0.0.0"[0m
+[0;32m        ][0m
+[0;32m    }[0m
+[0;32m}[0m
+[0;32mok: [CSR1kv] => {[0m
+[0;32m    "output": {[0m
+[0;32m        "ansible_facts": {[0m
+[0;32m            "discovered_interpreter_python": "/usr/bin/python"[0m
+[0;32m        },[0m
+[0;32m        "banners": {},[0m
+[0;32m        "changed": true,[0m
+[0;32m        "commands": [[0m
+[0;32m            "router eigrp 60",[0m
+[0;32m            "network 0.0.0.0 0.0.0.0"[0m
+[0;32m        ],[0m
+[0;32m        "deprecations": [[0m
+[0;32m            {[0m
+[0;32m                "msg": "Distribution ubuntu 20.04 on host CSR1kv should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information",[0m
+[0;32m                "version": "2.12"[0m
+[0;32m            }[0m
+[0;32m        ],[0m
+[0;32m        "failed": false,[0m
+[0;32m        "updates": [[0m
+[0;32m            "router eigrp 60",[0m
+[0;32m            "network 0.0.0.0 0.0.0.0"[0m
+[0;32m        ][0m
+[0;32m    }[0m
+[0;32m}[0m
+
+PLAY RECAP *********************************************************************
+[0;33mCSR1kv[0m                     : [0;32mok=2   [0m [0;33mchanged=1   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;33mCSR2kv[0m                     : [0;32mok=2   [0m [0;33mchanged=1   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
